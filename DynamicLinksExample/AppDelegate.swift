@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-  
+        setupNavigationController()
+        setupCoordinator()
         setupWindow()
-        tabBarCoordinator = TabBarCoordinator(window: window)
-        tabBarCoordinator.navigate(to: .SecondTab)
+        coordinator.start()
         
         return true
     }
@@ -50,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               let url = userActivity.webpageURL,
               let components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return false }
         
+        let tabbar = TabBarViewController()
+        let tabCoordinator = TabBarCoordinator(tabBarController: tabbar)
+        window?.rootViewController = tabbar
+        tabCoordinator.start()
+        tabCoordinator.navigate(to: .FirstTap(.Detail))
 //        // 2
 //        if let computer = ItemHandler.sharedInstance.items
 //            .filter({ $0.path == components.path}).first {

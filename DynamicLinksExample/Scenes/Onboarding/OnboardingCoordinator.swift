@@ -33,8 +33,9 @@ class OnboardingCoordinator: Coordinator {
             navigationController?.pushViewController(viewController, animated: true)
             break
         case .TabBar:
-            
-            let tabbbarCoordinator = TabBarCoordinator(window: self.navigationController?.view.window)
+            let tabbar = TabBarViewController()
+            let tabbbarCoordinator = TabBarCoordinator(tabBarController: tabbar)
+            navigationController?.view.window?.rootViewController = tabbar
             tabbbarCoordinator.start()
             break
         }

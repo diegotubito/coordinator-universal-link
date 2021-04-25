@@ -19,10 +19,17 @@ class OnboardingFirstPageViewController: UIViewController  {
     }
     
     private func createButton() {
-        let button = UIButton(frame: CGRect(x: 0, y: 200, width: 100, height: 50))
-        button.setTitle("Second View Controller", for: .normal)
+        let button = UIButton(frame: .zero)
+        button.setTitle("Go to Second Page", for: .normal)
         view.addSubview(button)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchDown)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            button.widthAnchor.constraint(equalToConstant: 250)
+        ])
     }
     
     @objc func buttonTapped() {

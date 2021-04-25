@@ -17,10 +17,18 @@ class OnboardingSecondPageViewController: UIViewController {
     }
     
     private func createButton() {
-        let button = UIButton(frame: CGRect(x: 0, y: 200, width: 100, height: 50))
-        button.setTitle("First View Controller", for: .normal)
+        let button = UIButton(frame: .zero)
+        button.setTitle("Finish Onboarding", for: .normal)
         view.addSubview(button)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchDown)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        let guide = view.layoutMarginsGuide
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            button.topAnchor.constraint(equalTo: guide.topAnchor, constant: 8),
+            button.widthAnchor.constraint(equalToConstant: 250)
+        ])
     }
     
     @objc func buttonTapped() {
