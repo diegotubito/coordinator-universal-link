@@ -15,15 +15,10 @@ class HomeViewController: UIViewController {
         
         view.backgroundColor = .blue
         title = "Home"
-        
         createButton()
         detailButton()
     }
-    
-    @IBAction func onboardTapped(_ sender: Any) {
-        
-    }
-    
+   
     private func createButton() {
         let button = UIButton(frame: .zero)
         button.setTitle("Go to Onboarding", for: .normal)

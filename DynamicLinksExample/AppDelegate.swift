@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabCoordinator = TabBarCoordinator(tabBarController: tabbar)
         window?.rootViewController = tabbar
         tabCoordinator.start()
-        tabCoordinator.navigate(to: .FirstTap(.Detail))
+        tabCoordinator.navigate(to: .FirstTab(.Detail))
 //        // 2
 //        if let computer = ItemHandler.sharedInstance.items
 //            .filter({ $0.path == components.path}).first {

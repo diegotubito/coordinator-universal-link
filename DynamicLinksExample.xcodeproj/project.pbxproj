@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		659F213F01362D04F500ECA7 /* Pods_DynamicLinksExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89B0325260C82349967C7BC /* Pods_DynamicLinksExample.framework */; };
 		F1D31BE826336D9D0085E6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D31BE726336D9D0085E6D7 /* AppDelegate.swift */; };
-		F1D31BEC26336D9D0085E6D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D31BEB26336D9D0085E6D7 /* ViewController.swift */; };
 		F1D31BF126336D9E0085E6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D31BF026336D9E0085E6D7 /* Assets.xcassets */; };
 		F1D31BF426336D9E0085E6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D31BF226336D9E0085E6D7 /* LaunchScreen.storyboard */; };
 		F1D31C0C263370AC0085E6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1D31C0B263370AC0085E6D7 /* GoogleService-Info.plist */; };
@@ -33,7 +32,6 @@
 		C89B0325260C82349967C7BC /* Pods_DynamicLinksExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicLinksExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D31BE426336D9D0085E6D7 /* DynamicLinksExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicLinksExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D31BE726336D9D0085E6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1D31BEB26336D9D0085E6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1D31BF026336D9E0085E6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1D31BF326336D9E0085E6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1D31BF526336D9E0085E6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				F1D31C0E26337A310085E6D7 /* DynamicLinksExample.entitlements */,
 				F1D31BE726336D9D0085E6D7 /* AppDelegate.swift */,
-				F1D31BEB26336D9D0085E6D7 /* ViewController.swift */,
 				F1D31C292633D02E0085E6D7 /* Coordinator */,
 				F1D31C102633C2580085E6D7 /* Scenes */,
 				F1D31BF026336D9E0085E6D7 /* Assets.xcassets */,
@@ -317,7 +314,6 @@
 				F1D31C3A26349BEE0085E6D7 /* TabBarCoordinator.swift in Sources */,
 				F1D31C452635D6D40085E6D7 /* DeatilViewController.swift in Sources */,
 				F1D31C172633C3560085E6D7 /* TabBarViewController.swift in Sources */,
-				F1D31BEC26336D9D0085E6D7 /* ViewController.swift in Sources */,
 				F1D31C142633C2930085E6D7 /* OnboardingFirstPageViewController.swift in Sources */,
 				F1D31BE826336D9D0085E6D7 /* AppDelegate.swift in Sources */,
 				F1D31C342633D37B0085E6D7 /* OnboardingSecondPageViewController.swift in Sources */,
